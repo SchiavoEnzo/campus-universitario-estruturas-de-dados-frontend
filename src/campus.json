@@ -1,0 +1,970 @@
+{
+  "nodes": [
+    {
+      "id": "BLK-A",
+      "name": "Bloco A · Administração",
+      "category": "Acadêmico",
+      "x": 220,
+      "y": 140
+    },
+    {
+      "id": "BIB",
+      "name": "Biblioteca Central",
+      "category": "Acadêmico",
+      "x": 370,
+      "y": 130
+    },
+    {
+      "id": "LAB-INF",
+      "name": "Laboratórios de Informática",
+      "category": "Acadêmico",
+      "x": 520,
+      "y": 140
+    },
+    {
+      "id": "BLK-B",
+      "name": "Bloco B · Salas de aula",
+      "category": "Acadêmico",
+      "x": 210,
+      "y": 260
+    },
+    {
+      "id": "BLK-C",
+      "name": "Bloco C · Engenharias",
+      "category": "Acadêmico",
+      "x": 535,
+      "y": 260
+    },
+    {
+      "id": "LAB-CIE",
+      "name": "Laboratório de Ciências",
+      "category": "Acadêmico",
+      "x": 665,
+      "y": 150
+    },
+    {
+      "id": "RU",
+      "name": "Restaurante Universitário",
+      "category": "Alimentação",
+      "x": 375,
+      "y": 365
+    },
+    {
+      "id": "CAF",
+      "name": "Café do Campus",
+      "category": "Alimentação",
+      "x": 245,
+      "y": 365
+    },
+    {
+      "id": "PORT-S",
+      "name": "Portaria Sul",
+      "category": "Acessos",
+      "x": 370,
+      "y": 515
+    },
+    {
+      "id": "PORT-N",
+      "name": "Portaria Norte",
+      "category": "Acessos",
+      "x": 370,
+      "y": 40
+    },
+    {
+      "id": "PORT-L",
+      "name": "Portaria Leste",
+      "category": "Acessos",
+      "x": 755,
+      "y": 265
+    },
+    {
+      "id": "EST-N",
+      "name": "Estacionamento Norte",
+      "category": "Acessos",
+      "x": 190,
+      "y": 50
+    },
+    {
+      "id": "EST-S",
+      "name": "Estacionamento Sul",
+      "category": "Acessos",
+      "x": 535,
+      "y": 490
+    },
+    {
+      "id": "BUS",
+      "name": "Ponto de Ônibus",
+      "category": "Acessos",
+      "x": 210,
+      "y": 510
+    },
+    {
+      "id": "PRACA",
+      "name": "Praça Central",
+      "category": "Convivência",
+      "x": 375,
+      "y": 260
+    },
+    {
+      "id": "JARDIM",
+      "name": "Jardim Botânico",
+      "category": "Convivência",
+      "x": 655,
+      "y": 390
+    },
+    {
+      "id": "QUADRA",
+      "name": "Centro Esportivo",
+      "category": "Convivência",
+      "x": 685,
+      "y": 495
+    },
+    {
+      "id": "AUD",
+      "name": "Auditório",
+      "category": "Acadêmico",
+      "x": 665,
+      "y": 265
+    },
+    {
+      "id": "SAUDE",
+      "name": "Centro de Saúde",
+      "category": "Serviços",
+      "x": 90,
+      "y": 365
+    },
+    {
+      "id": "SEC",
+      "name": "Secretaria Acadêmica",
+      "category": "Serviços",
+      "x": 90,
+      "y": 145
+    },
+    {
+      "id": "APOIO",
+      "name": "Apoio ao Estudante",
+      "category": "Serviços",
+      "x": 90,
+      "y": 260
+    },
+    {
+      "id": "BICI",
+      "name": "Bicicletário",
+      "category": "Acessos",
+      "x": 90,
+      "y": 490
+    },
+    {
+      "id": "INOVA",
+      "name": "Centro de Inovação",
+      "category": "Acadêmico",
+      "x": 535,
+      "y": 365
+    },
+    {
+      "id": "CONV",
+      "name": "Centro de Convivência",
+      "category": "Convivência",
+      "x": 375,
+      "y": 450
+    }
+  ],
+  "edges": [
+    {
+      "from": "BLK-A",
+      "to": "BIB",
+      "distance": 150,
+      "time": 3,
+      "accessible": true,
+      "vehicle": true,
+      "crowd": 0,
+      "blocked": false,
+      "id": "e0"
+    },
+    {
+      "from": "BIB",
+      "to": "LAB-INF",
+      "distance": 100,
+      "time": 2,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 1,
+      "blocked": false,
+      "id": "e1"
+    },
+    {
+      "from": "LAB-INF",
+      "to": "BLK-A",
+      "distance": 200,
+      "time": 4,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 2,
+      "blocked": false,
+      "id": "e2"
+    },
+    {
+      "from": "BLK-A",
+      "to": "BLK-B",
+      "distance": 95,
+      "time": 1.5,
+      "accessible": false,
+      "vehicle": true,
+      "crowd": 3,
+      "blocked": false,
+      "id": "e3"
+    },
+    {
+      "from": "BLK-B",
+      "to": "BLK-A",
+      "distance": 95,
+      "time": 1.5,
+      "accessible": false,
+      "vehicle": true,
+      "crowd": 3,
+      "blocked": false,
+      "id": "e4"
+    },
+    {
+      "from": "BLK-A",
+      "to": "EST-N",
+      "distance": 75,
+      "time": 1.3,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 0,
+      "blocked": false,
+      "id": "e5"
+    },
+    {
+      "from": "EST-N",
+      "to": "BLK-A",
+      "distance": 75,
+      "time": 1.3,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 0,
+      "blocked": false,
+      "id": "e6"
+    },
+    {
+      "from": "BLK-A",
+      "to": "SEC",
+      "distance": 105,
+      "time": 2,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 1,
+      "blocked": false,
+      "id": "e7"
+    },
+    {
+      "from": "SEC",
+      "to": "BLK-A",
+      "distance": 105,
+      "time": 2,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 1,
+      "blocked": false,
+      "id": "e8"
+    },
+    {
+      "from": "BIB",
+      "to": "PORT-N",
+      "distance": 70,
+      "time": 1.1,
+      "accessible": true,
+      "vehicle": true,
+      "crowd": 2,
+      "blocked": false,
+      "id": "e9"
+    },
+    {
+      "from": "BIB",
+      "to": "PRACA",
+      "distance": 105,
+      "time": 1.8,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 3,
+      "blocked": false,
+      "id": "e10"
+    },
+    {
+      "from": "PRACA",
+      "to": "BIB",
+      "distance": 105,
+      "time": 1.8,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 3,
+      "blocked": false,
+      "id": "e11"
+    },
+    {
+      "from": "LAB-INF",
+      "to": "BLK-C",
+      "distance": 95,
+      "time": 1.8,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 0,
+      "blocked": false,
+      "id": "e12"
+    },
+    {
+      "from": "BLK-C",
+      "to": "LAB-INF",
+      "distance": 95,
+      "time": 1.8,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 0,
+      "blocked": false,
+      "id": "e13"
+    },
+    {
+      "from": "LAB-INF",
+      "to": "LAB-CIE",
+      "distance": 115,
+      "time": 1.8,
+      "accessible": true,
+      "vehicle": true,
+      "crowd": 1,
+      "blocked": false,
+      "id": "e14"
+    },
+    {
+      "from": "LAB-CIE",
+      "to": "LAB-INF",
+      "distance": 115,
+      "time": 1.8,
+      "accessible": true,
+      "vehicle": true,
+      "crowd": 1,
+      "blocked": false,
+      "id": "e15"
+    },
+    {
+      "from": "BLK-B",
+      "to": "PRACA",
+      "distance": 130,
+      "time": 2.2,
+      "accessible": false,
+      "vehicle": false,
+      "crowd": 2,
+      "blocked": false,
+      "id": "e16"
+    },
+    {
+      "from": "PRACA",
+      "to": "BLK-B",
+      "distance": 130,
+      "time": 2.2,
+      "accessible": false,
+      "vehicle": false,
+      "crowd": 2,
+      "blocked": false,
+      "id": "e17"
+    },
+    {
+      "from": "BLK-B",
+      "to": "CAF",
+      "distance": 90,
+      "time": 1.7,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 3,
+      "blocked": false,
+      "id": "e18"
+    },
+    {
+      "from": "CAF",
+      "to": "BLK-B",
+      "distance": 90,
+      "time": 1.7,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 3,
+      "blocked": false,
+      "id": "e19"
+    },
+    {
+      "from": "BLK-B",
+      "to": "APOIO",
+      "distance": 95,
+      "time": 1.5,
+      "accessible": true,
+      "vehicle": true,
+      "crowd": 0,
+      "blocked": false,
+      "id": "e20"
+    },
+    {
+      "from": "BLK-C",
+      "to": "PRACA",
+      "distance": 130,
+      "time": 2.2,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 1,
+      "blocked": false,
+      "id": "e21"
+    },
+    {
+      "from": "PRACA",
+      "to": "BLK-C",
+      "distance": 130,
+      "time": 2.2,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 1,
+      "blocked": false,
+      "id": "e22"
+    },
+    {
+      "from": "BLK-C",
+      "to": "AUD",
+      "distance": 105,
+      "time": 2,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 2,
+      "blocked": false,
+      "id": "e23"
+    },
+    {
+      "from": "AUD",
+      "to": "BLK-C",
+      "distance": 105,
+      "time": 2,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 2,
+      "blocked": false,
+      "id": "e24"
+    },
+    {
+      "from": "BLK-C",
+      "to": "INOVA",
+      "distance": 85,
+      "time": 1.3,
+      "accessible": true,
+      "vehicle": true,
+      "crowd": 3,
+      "blocked": false,
+      "id": "e25"
+    },
+    {
+      "from": "INOVA",
+      "to": "BLK-C",
+      "distance": 85,
+      "time": 1.3,
+      "accessible": true,
+      "vehicle": true,
+      "crowd": 3,
+      "blocked": false,
+      "id": "e26"
+    },
+    {
+      "from": "LAB-CIE",
+      "to": "AUD",
+      "distance": 90,
+      "time": 1.6,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 0,
+      "blocked": false,
+      "id": "e27"
+    },
+    {
+      "from": "AUD",
+      "to": "LAB-CIE",
+      "distance": 90,
+      "time": 1.6,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 0,
+      "blocked": false,
+      "id": "e28"
+    },
+    {
+      "from": "LAB-CIE",
+      "to": "PORT-L",
+      "distance": 115,
+      "time": 2.2,
+      "accessible": false,
+      "vehicle": false,
+      "crowd": 1,
+      "blocked": false,
+      "id": "e29"
+    },
+    {
+      "from": "PORT-L",
+      "to": "LAB-CIE",
+      "distance": 115,
+      "time": 2.2,
+      "accessible": false,
+      "vehicle": false,
+      "crowd": 1,
+      "blocked": false,
+      "id": "e30"
+    },
+    {
+      "from": "RU",
+      "to": "CAF",
+      "distance": 105,
+      "time": 1.6,
+      "accessible": true,
+      "vehicle": true,
+      "crowd": 2,
+      "blocked": false,
+      "id": "e31"
+    },
+    {
+      "from": "RU",
+      "to": "PRACA",
+      "distance": 85,
+      "time": 1.5,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 3,
+      "blocked": false,
+      "id": "e32"
+    },
+    {
+      "from": "PRACA",
+      "to": "RU",
+      "distance": 85,
+      "time": 1.5,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 3,
+      "blocked": false,
+      "id": "e33"
+    },
+    {
+      "from": "RU",
+      "to": "CONV",
+      "distance": 70,
+      "time": 1.3,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 0,
+      "blocked": false,
+      "id": "e34"
+    },
+    {
+      "from": "CONV",
+      "to": "RU",
+      "distance": 70,
+      "time": 1.3,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 0,
+      "blocked": false,
+      "id": "e35"
+    },
+    {
+      "from": "RU",
+      "to": "INOVA",
+      "distance": 130,
+      "time": 2,
+      "accessible": true,
+      "vehicle": true,
+      "crowd": 1,
+      "blocked": false,
+      "id": "e36"
+    },
+    {
+      "from": "INOVA",
+      "to": "RU",
+      "distance": 130,
+      "time": 2,
+      "accessible": true,
+      "vehicle": true,
+      "crowd": 1,
+      "blocked": false,
+      "id": "e37"
+    },
+    {
+      "from": "CAF",
+      "to": "SAUDE",
+      "distance": 125,
+      "time": 2.2,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 2,
+      "blocked": false,
+      "id": "e38"
+    },
+    {
+      "from": "SAUDE",
+      "to": "CAF",
+      "distance": 125,
+      "time": 2.2,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 2,
+      "blocked": false,
+      "id": "e39"
+    },
+    {
+      "from": "PORT-S",
+      "to": "CONV",
+      "distance": 50,
+      "time": 1,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 3,
+      "blocked": false,
+      "id": "e40"
+    },
+    {
+      "from": "CONV",
+      "to": "PORT-S",
+      "distance": 50,
+      "time": 1,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 3,
+      "blocked": false,
+      "id": "e41"
+    },
+    {
+      "from": "PORT-S",
+      "to": "BUS",
+      "distance": 130,
+      "time": 2,
+      "accessible": false,
+      "vehicle": true,
+      "crowd": 0,
+      "blocked": false,
+      "id": "e42"
+    },
+    {
+      "from": "PORT-S",
+      "to": "EST-S",
+      "distance": 135,
+      "time": 2.3,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 1,
+      "blocked": false,
+      "id": "e43"
+    },
+    {
+      "from": "EST-S",
+      "to": "PORT-S",
+      "distance": 135,
+      "time": 2.3,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 1,
+      "blocked": false,
+      "id": "e44"
+    },
+    {
+      "from": "PORT-N",
+      "to": "EST-N",
+      "distance": 145,
+      "time": 2.8,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 2,
+      "blocked": false,
+      "id": "e45"
+    },
+    {
+      "from": "EST-N",
+      "to": "PORT-N",
+      "distance": 145,
+      "time": 2.8,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 2,
+      "blocked": false,
+      "id": "e46"
+    },
+    {
+      "from": "PORT-L",
+      "to": "AUD",
+      "distance": 70,
+      "time": 1.1,
+      "accessible": true,
+      "vehicle": true,
+      "crowd": 3,
+      "blocked": false,
+      "id": "e47"
+    },
+    {
+      "from": "AUD",
+      "to": "PORT-L",
+      "distance": 70,
+      "time": 1.1,
+      "accessible": true,
+      "vehicle": true,
+      "crowd": 3,
+      "blocked": false,
+      "id": "e48"
+    },
+    {
+      "from": "EST-N",
+      "to": "SEC",
+      "distance": 110,
+      "time": 1.9,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 0,
+      "blocked": false,
+      "id": "e49"
+    },
+    {
+      "from": "SEC",
+      "to": "EST-N",
+      "distance": 110,
+      "time": 1.9,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 0,
+      "blocked": false,
+      "id": "e50"
+    },
+    {
+      "from": "EST-S",
+      "to": "QUADRA",
+      "distance": 120,
+      "time": 2.3,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 1,
+      "blocked": false,
+      "id": "e51"
+    },
+    {
+      "from": "QUADRA",
+      "to": "EST-S",
+      "distance": 120,
+      "time": 2.3,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 1,
+      "blocked": false,
+      "id": "e52"
+    },
+    {
+      "from": "EST-S",
+      "to": "INOVA",
+      "distance": 100,
+      "time": 1.5,
+      "accessible": true,
+      "vehicle": true,
+      "crowd": 2,
+      "blocked": false,
+      "id": "e53"
+    },
+    {
+      "from": "BUS",
+      "to": "BICI",
+      "distance": 95,
+      "time": 1.6,
+      "accessible": false,
+      "vehicle": false,
+      "crowd": 3,
+      "blocked": false,
+      "id": "e54"
+    },
+    {
+      "from": "BICI",
+      "to": "BUS",
+      "distance": 95,
+      "time": 1.6,
+      "accessible": false,
+      "vehicle": false,
+      "crowd": 3,
+      "blocked": false,
+      "id": "e55"
+    },
+    {
+      "from": "PRACA",
+      "to": "CONV",
+      "distance": 150,
+      "time": 2.9,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 0,
+      "blocked": false,
+      "id": "e56"
+    },
+    {
+      "from": "CONV",
+      "to": "PRACA",
+      "distance": 150,
+      "time": 2.9,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 0,
+      "blocked": false,
+      "id": "e57"
+    },
+    {
+      "from": "JARDIM",
+      "to": "AUD",
+      "distance": 100,
+      "time": 1.5,
+      "accessible": true,
+      "vehicle": true,
+      "crowd": 1,
+      "blocked": false,
+      "id": "e58"
+    },
+    {
+      "from": "AUD",
+      "to": "JARDIM",
+      "distance": 100,
+      "time": 1.5,
+      "accessible": true,
+      "vehicle": true,
+      "crowd": 1,
+      "blocked": false,
+      "id": "e59"
+    },
+    {
+      "from": "JARDIM",
+      "to": "QUADRA",
+      "distance": 85,
+      "time": 1.5,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 2,
+      "blocked": false,
+      "id": "e60"
+    },
+    {
+      "from": "QUADRA",
+      "to": "JARDIM",
+      "distance": 85,
+      "time": 1.5,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 2,
+      "blocked": false,
+      "id": "e61"
+    },
+    {
+      "from": "JARDIM",
+      "to": "INOVA",
+      "distance": 100,
+      "time": 1.9,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 3,
+      "blocked": false,
+      "id": "e62"
+    },
+    {
+      "from": "INOVA",
+      "to": "JARDIM",
+      "distance": 100,
+      "time": 1.9,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 3,
+      "blocked": false,
+      "id": "e63"
+    },
+    {
+      "from": "SAUDE",
+      "to": "APOIO",
+      "distance": 85,
+      "time": 1.3,
+      "accessible": true,
+      "vehicle": true,
+      "crowd": 0,
+      "blocked": false,
+      "id": "e64"
+    },
+    {
+      "from": "SAUDE",
+      "to": "BICI",
+      "distance": 100,
+      "time": 1.7,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 1,
+      "blocked": false,
+      "id": "e65"
+    },
+    {
+      "from": "BICI",
+      "to": "SAUDE",
+      "distance": 100,
+      "time": 1.7,
+      "accessible": true,
+      "vehicle": false,
+      "crowd": 1,
+      "blocked": false,
+      "id": "e66"
+    },
+    {
+      "from": "SEC",
+      "to": "APOIO",
+      "distance": 90,
+      "time": 1.7,
+      "accessible": false,
+      "vehicle": false,
+      "crowd": 2,
+      "blocked": false,
+      "id": "e67"
+    },
+    {
+      "from": "APOIO",
+      "to": "SEC",
+      "distance": 90,
+      "time": 1.7,
+      "accessible": false,
+      "vehicle": false,
+      "crowd": 2,
+      "blocked": false,
+      "id": "e68"
+    },
+    {
+      "from": "INOVA",
+      "to": "CONV",
+      "distance": 145,
+      "time": 2.2,
+      "accessible": true,
+      "vehicle": true,
+      "crowd": 3,
+      "blocked": false,
+      "id": "e69"
+    },
+    {
+      "from": "CONV",
+      "to": "INOVA",
+      "distance": 145,
+      "time": 2.2,
+      "accessible": true,
+      "vehicle": true,
+      "crowd": 3,
+      "blocked": false,
+      "id": "e70"
+    }
+  ],
+  "paths": {
+    "home": "M3 10 12 3 21 10v10h-6v-6H9v6H3Z",
+    "map": "m3 5 6-2 6 2 6-2v16l-6 2-6-2-6 2Zm6-2v16m6-14v16",
+    "route": "M6 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm12 10a3 3 0 1 0 0 6 3 3 0 0 0 0-6ZM9 7h6a4 4 0 0 1 0 8H9",
+    "pin": "M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0ZM9 10a3 3 0 1 0 6 0 3 3 0 0 0-6 0",
+    "star": "m12 3 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1Z",
+    "access": "M12 3v1m-7 4h14m-7 0v6m0 0-5 7m5-7 5 7",
+    "alert": "m12 3 10 18H2ZM12 9v5m0 3v1",
+    "graph": "M5 5h4v4H5Zm10 10h4v4h-4ZM4 17h4v4H4Zm12-15h4v4h-4ZM9 7l7-3M8 9l8 7M7 9l-1 8",
+    "arrow": "M4 12h16m-6-6 6 6-6 6",
+    "book": "M3 4h7l2 2 2-2h7v16h-7l-2 2-2-2H3Zm9 2v16",
+    "bell": "M5 17h14l-2-3V9a5 5 0 0 0-10 0v5ZM10 21h4",
+    "leaf": "M20 3C4 2 1 15 8 19s14-5 12-16ZM4 22 16 9",
+    "clock": "M12 8v5l4 2M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0"
+  }
+}
