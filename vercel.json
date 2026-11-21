@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://campus-universitario-estruturas-de-one.vercel.app/api/:path*"
+    }
+  ]
+}
